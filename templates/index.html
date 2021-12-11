@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1>Flight Price Predection </h1>
+    <form action="{{ url_for("gfg")}}" method="post">
+<label for="Total_Stops">Total_Stops:</label>
+<input type="text" id="Total_Stops" name="Total_Stops" placeholder="0 or 1 or 2">
+
+<label for="Month">Month:</label>
+<input type="text" id="Month" name="Month" placeholder="Enter Month (1 to 12)">
+
+<label for="Day">Day:</label>
+<input type="text" id="Day" name="Day" placeholder="Enter Day (1 to 31)">
+
+<label for="Dep_hour"> Dep_hour : </label>
+<input type="text" id="Dep_hour" name="Dep_hour" placeholder="Enter Dep_hour (1 to 24)">
+
+
+<label for="Dep_min"> Dep_min : </label>
+<input type="text" id="Dep_min" name="Dep_min" placeholder="enter min (0-59)">
+
+<hr>
+
+<label for="Duration_hours">Duration_hours:</label>
+<input type="text" id="Duration_hours" name="Duration_hours" placeholder="enter Duration_hours (1 to 24)">
+
+<label for="Duration_mins"> Duration_mins : </label>
+<input type="text" id="Duration_mins" name="Duration_mins" placeholder="enter min (0 to 59)">
+
+
+<label for="Arrival_hr">Arrival_hr:</label>
+<input type="text" id="Arrival_hr" name="Arrival_hr" placeholder="enter Arrival_hr (1 to 24)">
+
+
+<label for="Arrival_min">Arrival_min:</label>
+<input type="text" id="Arrival_min" name="Arrival_min" placeholder="enter min (0 to 59)">
+
+<hr>
+
+<label for="Airline">Airline:</label>
+  <select id="Airline" name="Airline">
+    <option value="Air India">Air India</option>
+    <option value="GoAir">GoAir </option>
+    <option value="IndiGo">IndiGo</option>
+    <option value="Jet Airways">Jet Airways </option>
+    <option value="Jet Airways Business">Jet Airways Business</option>
+    <option value="Multiple carriers">Multiple carriers</option>
+    <option value="Multiple carriers Premium economy">Multiple carriers Premium economy</option>
+    <option value="SpiceJet">SpiceJet</option>
+    <option value="Trujet">Trujet</option>
+    <option value="Vistara">Vistara</option>
+    <option value="Vistara Premium economy">Vistara Premium economy</option>
+  </select>
+
+<label for="Source"> Source : </label>
+  <select id="Source" name="Source">
+    <option value="Chennai">Chennai</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Kolkata">Kolkata</option>
+    <option value="Mumbai">Mumbai</option>
+  </select>
+
+<label for="Destination"> Destination : </label>
+  <select id="Destination" name="Destination">
+    <option value="Cochin">Cochin</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Kolkata">Kolkata</option>
+    <option value="New Delhi">New Delhi</option>
+  </select>
+
+<hr>
+
+<button type="submit">Predict</button>
+</body>
+</html>
